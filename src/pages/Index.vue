@@ -98,6 +98,7 @@
               >Older Posts &rarr;</a
             >
           </div> -->
+          
           <Pager :info="$page.posts.pageInfo"/>
         </div>
       </div>
