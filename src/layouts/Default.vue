@@ -19,16 +19,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <g-link 
+                class="nav-link" 
+                to="/"
+              >Home</g-link>
+              
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <g-link class="nav-link" to="about">About</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
+              <g-link class="nav-link" @click="onMyWay">Sample Post</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <g-link class="nav-link" to="contact">Contact</g-link>
             </li>
           </ul>
         </div>
@@ -78,5 +82,15 @@
     </footer>
   </div>
 </template>
+<script>
+
+export default {
+  methods: {
+    onMyWay() {
+      window.alert('开发中')
+    }
+  }
+}
+</script>
 
 <style></style>
